@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Price Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Input field to enter the price In kilogram -->
+      <label for="">Price In KG</label> 
+      <input type="number" id="priceInKG" placeholder="Enter price in KG" />
+
+      <!-- Dropdown to select either "Gram quantity" or "Goods amount" -->
+      <div class="select-container">
+        <select name="options" id="select">
+          <option value="Gram quantity">Gram quantity</option>
+          <option value="Goods amount">Goods amount</option>
+        </select>
+      </div>
+
+      <!-- Container for inputs related to quantity/amount -->
+      <div class="hello">
+        <!-- Input field to enter the quantity in grams or amount of goods -->
+        <input type="number" id="rowThree" />
+
+        <!-- Read-only text field to display the unit (gm) -->
+        <input type="text" value="gm" readonly />
+
+        <!-- Read-only output field to display the calculated result -->
+        <input type="text" id="output" readonly />
+
+        <!-- Read-only text field to display the unit (RS) -->
+        <input type="text" value="RS" readonly />
+      </div>
+
+      <!-- footer  -->
+      <footer>
+        <p>Akinur Rahman</p>
+      </footer>
+    </div>
+    <!-- js -->
+    <script src="script.js"></script>
+  </body>
+</html>
