@@ -21,6 +21,10 @@ const updatePlaceholder = () =>{
         output.placeholder = "Your goods quantity"
         
     } 
+    if(rowThree.value){
+        rowThree.value = '';
+        output.value = '';
+    }
 }
 
 // Calling the updatePlaceholder function to set initial values
@@ -36,7 +40,12 @@ const calculation = () =>{
     } else {
         output.value = (rowThree.value * 1000)/priceInKG.value
     }
+
+  
 }
 
 // Adding event listener to the input field for quantity/amount to perform the calculation
 rowThree.addEventListener('input',calculation)
+
+
+
